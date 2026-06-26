@@ -10,4 +10,5 @@ kops create cluster \
 --node-volume-size 20 \
 --dns private
 
-export KOPS_STATE_STORE=s3://mustafa-project-kops-state-store-12345
+  export KOPS_STATE_STORE=s3://mustafa-project-kops-state-store-12345
+  kops delete cluster --name mustafa.k8s.local --yes
