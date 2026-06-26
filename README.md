@@ -9,3 +9,5 @@ kops create cluster \
 --node-size t3.micro \
 --node-volume-size 20 \
 --dns private
+
+export KOPS_STATE_STORE=s3://mustafa-project-kops-state-store-12345
