@@ -1,2 +1,11 @@
-# MyfirstRepo
-Testing Purpose
+kops create cluster \
+--name mustafa.k8s.local \
+--cloud aws \
+--zones us-east-2a,us-east-2b \
+--control-plane-count 1 \
+--control-plane-size t3.small \
+--control-plane-volume-size 30 \
+--node-count 2 \
+--node-size t3.micro \
+--node-volume-size 20 \
+--dns private
